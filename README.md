@@ -3,6 +3,8 @@ Multi-instance Redis
 
 This is an Ansible role for provisioning multiple [Redis](https://redis.io/) instances, with customisable configurations for each one.
 
+Available via [Ansible Galaxy](https://galaxy.ansible.com/libre_ops/multi_redis).
+
 Defaults
 --------
 
