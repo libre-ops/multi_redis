@@ -3,8 +3,8 @@
 - name: add official redis ppa
   apt_repository:
     repo: ppa:redislabs/redis
-  when: redis_use_ppa
+  when: multiredis_use_ppa
 
 - name: install redis
   apt:
-    name: "{{ redis_package_name }}"
+    name: "{{ multiredis_package_name }}"

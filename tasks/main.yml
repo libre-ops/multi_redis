@@ -5,7 +5,7 @@
 
 - name: configure instances
   include_tasks: configure.yml
-  loop: "{{ redis_instances }}"
+  loop: "{{ multiredis_instances }}"
   loop_control:
     loop_var: redis_instance
 
@@ -14,4 +14,4 @@
     name: "{{ multiredis_package_name }}"
     status: stopped
     enabled: false
-  when: redis_disable_default_instance
+  when: multiredis_disable_default_instance
