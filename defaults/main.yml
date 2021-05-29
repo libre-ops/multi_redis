@@ -1,0 +1,18 @@
+---
+
+# Use the official Redis PPA to install the latest stable version
+multiredis_use_ppa: true
+
+# Default redis package name
+multiredis_package_name: redis-server
+
+# Disable the "default" Redis instance added by the redis package
+multiredis_disable_default_instance: true
+
+# Define configurations for custom Redis instances
+multiredis_instances:
+  - name: cache
+    port: 6380
+    configs: |
+      maxmemory 100mb
+      maxmemory-policy allkeys-lru

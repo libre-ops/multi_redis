@@ -1,0 +1,23 @@
+galaxy_info:
+  role_name: multi_redis
+  author: Matt-Yorkley
+  description: Easy multi-instance Redis
+  company: libre-ops
+
+  license: GPLv3
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+
+  galaxy_tags:
+    - redis
+    - multi
+    - instance
+
+dependencies: []
