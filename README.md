@@ -8,7 +8,7 @@ Available via [Ansible Galaxy](https://galaxy.ansible.com/libre_ops/multi_redis)
 Defaults
 --------
 
-Check out this role's overridable defaults [here.](defaults/main.yml) 
+Check out this role's overridable defaults [here](defaults/main.yml) (with explanatory comments).
 
 
 Setup
@@ -49,5 +49,5 @@ Example playbook
   hosts: webservers
 
   roles:
-    - role: libre_ops.mutli_redis
+    - role: libre_ops.multi_redis
 ```
